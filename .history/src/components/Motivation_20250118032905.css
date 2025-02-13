@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  
+  /* Motivation Container */
+  .motivationContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    padding: 2rem 1rem; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding in width calculations */
+    overflow-x: hidden; /* Prevent overflow caused by animation */
+    min-height: 100vh; /* Ensure it fills the viewport */
+    margin-top: 350px; /* Default for larger screens */
+  }
+  
+  /* Motivation Box */
+  .motivationBox {
+    width: 100%;
+    max-width: 600px;
+    margin: 1.5rem auto; /* Center box horizontally with proper spacing */
+    padding: 2rem; /* Ensure there's enough padding for content */
+    background-color: rgb(61, 60, 60);
+    border-radius: 20px;
+    border: solid 1px rgb(200, 255, 0);
+    color: white;
+    line-height: 1.6;
+    text-align: justify;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .motivationBox:hover {
+    box-shadow: 0 0 20px rgb(200, 255, 0);
+    transform: scale(1.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Motivation Image */
+  .motivationBar {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center; /* Center the image */
+    width: 100%;
+    padding: 0 1rem; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding in width */
+  }
+  
+  .motivationImg {
+    width: 100%; /* Make image responsive */
+    max-width: 400px; /* Constrain image size for larger screens */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 20px;
+    box-shadow: 10px 1px 1px rgb(200, 255, 0);
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .motivationContainer {
+      margin-top: 200px; /* Adjust spacing for tablets */
+    }
+  
+    .motivationBox {
+      padding: 1.5rem; /* Adjust padding for smaller screens */
+      font-size: 0.9rem; /* Adjust text size */
+      margin: 1rem auto; /* Ensure proper spacing */
+    }
+  
+    .motivationImg {
+      max-width: 300px; /* Scale down image */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .motivationContainer {
+      margin-top: 150px; /* Adjust spacing for mobile */
+      padding: 1rem; /* Reduce padding for smaller screens */
+    }
+  
+    .motivationBox {
+      padding: 1rem; /* Adjust padding for mobile */
+      font-size: 0.85rem; /* Scale down text size */
+      margin: 0.75rem auto; /* Ensure proper spacing */
+    }
+  
+    .motivationImg {
+      max-width: 250px; /* Further scale down image */
+    }
+  }
+
+
+
+
+
+
+
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    overflow-x: hidden; /* Prevent horizontal scrolling globally */
+  }
+  
+  /* Education Container */
+  .motivationContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%; /* Full width */
+    max-width: 100%; /* Prevent exceeding viewport width */
+    padding: 2rem 1rem; /* Add padding for better spacing */
+    box-sizing: border-box; /* Include padding in width calculations */
+    overflow-x: hidden; /* Prevent overflow caused by animation */
+    min-height: 100vh; /* Ensure the container fills the viewport height */
+  }
+  
+
+  .motivationBox {
+    width: 100%; /* Full width */
+    max-width: 600px; /* Constrain to a reasonable size */
+    margin: 2rem auto; /* Center the box and add spacing */
+    padding: 1rem; /* Add spacing inside the box */
+    box-sizing: border-box; /* Include padding in width calculations */
+  }
+  
+
+  .motivationBar {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+    width: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+  }
+  
+
+  .motivationImg {
+    width: 100%;
+    max-width: 200px;
+    height: auto; 
+    border-radius: 20px;
+    box-shadow: -10px 1px 1px rgb(200, 255, 0);
+  }
+  
+
+  .motivationPara {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: rgb(61, 60, 60);
+    border-radius: 20px;
+    border: solid 1px rgb(200, 255, 0);
+    color: white;
+    line-height: 1.6;
+    text-align: justify;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .motivationPara:hover {
+    box-shadow: 0 0 20px rgb(200, 255, 0);
+    transform: scale(1.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .motivationContainer {
+      padding: 1rem; 
+    }
+  
+    .motivationBar {
+      gap: 15px; 
+    }
+  
+    .motivationImg {
+      max-width: 150px;
+    }
+  
+    .motivationPara {
+      padding: 1rem; 
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .motivationContainer {
+      padding: 1rem;
+    }
+  
+    .motivationBar {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .motivationImg {
+      max-width: 120px;
+    }
+  
+    .motivationPara {
+      padding: 0.75rem;
+      font-size: 0.8rem;
+    }
+  }

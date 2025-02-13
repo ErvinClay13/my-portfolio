@@ -1,0 +1,107 @@
+.headingBody {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  margin-bottom: 100px;
+  padding: 0 20px; 
+}
+
+.headingLinks {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: rgb(61, 60, 60);
+  border: solid 2px rgb(200, 255, 0);
+  box-shadow: 10px 5px 5px rgb(200, 255, 0);
+  width: auto;
+  font-weight: bolder;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.ApeCodeImg {
+  width:70px;
+  height: 70px;
+  border-radius: 50px;
+}
+
+.links {
+  text-decoration: none;
+  color: white;
+  text-shadow: 1px 1px 5px rgb(200, 255, 0);
+}
+
+.links:hover {
+  color: rgb(200, 255, 0);
+}
+
+a {
+  font-family: cursive;
+}
+
+.robotContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; 
+}
+
+.robotImg {
+  height: 20px;
+  animation: bounce 2s infinite; 
+}
+
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(0); 
+  }
+  50% {
+      transform: translateY(-10px); 
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .headingLinks {
+      display: none; 
+      flex-direction: column;
+      gap: 5px;
+      position: absolute;
+      top: 60px; 
+      right: 20px;
+      background-color: rgb(61, 60, 60);
+      border: solid 2px rgb(200, 255, 0);
+      box-shadow: 5px 5px 10px rgb(200, 255, 0);
+      padding: 10px;
+      border-radius: 10px;
+  }
+
+  .headingLinks.open {
+      display: flex; /* Show the links when open */
+  }
+
+  .hamburger {
+      display: block; /* Show the hamburger icon */
+      font-size: 24px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: rgb(200, 255, 0);
+      text-shadow: 1px 1px 5px rgb(200, 255, 0);
+  }
+
+  .ApeCodeImg {
+      margin-right: auto; /* Align logo to the left */
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .hamburger {
+      display: none; /* Hide hamburger icon on larger screens */
+  }
+
+  .headingLinks {
+      display: flex; /* Show links on larger screens */
+  }
+}

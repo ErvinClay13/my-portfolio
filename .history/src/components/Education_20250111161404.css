@@ -1,0 +1,10 @@
+.eduContainer {
+    display: flex;
+    mar
+}
+
+.eduBox {
+    background-color: red;
+    color: white;
+    border: solid greenyellow;
+}

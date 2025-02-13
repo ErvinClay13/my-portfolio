@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
+.eduContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%; 
+  max-width: 100%;
+  padding: 2rem 1rem; 
+  box-sizing: border-box; 
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+
+.eduBox {
+  width: 100%; 
+  max-width: 600px; 
+  margin: 2rem auto; 
+  padding: 1rem; 
+  box-sizing: border-box; /* Include padding in width calculations */
+}
+
+/* Education Progress Bar Container */
+.EduBar {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center; /* Center items */
+  gap: 20px; /* Add spacing between items */
+  width: 100%; /* Prevent overflow */
+  padding: 0 1rem; /* Add padding */
+  box-sizing: border-box; /* Include gap/padding in width */
+  flex-wrap: nowrap; /* Prevent wrapping, keep images side-by-side */
+  overflow-x: auto; /* Allow horizontal scrolling if necessary */
+  scrollbar-width: none; /* Hide scrollbar (Firefox) */
+  -ms-overflow-style: none; /* Hide scrollbar (IE/Edge) */
+}
+
+.EduBar::-webkit-scrollbar {
+  display: none; /* Hide scrollbar (WebKit) */
+}
+
+/* Education Progress Images */
+.EduImg {
+  flex-shrink: 0; /* Prevent images from shrinking */
+  width: 100%; /* Make images responsive */
+  max-width: 200px; /* Constrain to a reasonable size */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 20px;
+  box-shadow: -10px 1px 1px rgb(200, 255, 0);
+}
+
+
+.eduPara {
+  display: flex;
+  align-items: center;
+  width: 100%; /* Full width for responsiveness */
+  max-width: 500px; /* Constrain to a reasonable size */
+  margin: 0 auto; /* Center the paragraph */
+  padding: 1.5rem;
+  background-color: rgb(61, 60, 60);
+  border-radius: 20px;
+  border: solid 1px rgb(200, 255, 0);
+  color: white;
+  line-height: 1.6;
+  text-align: justify;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.eduPara:hover {
+  box-shadow: 0 0 20px rgb(200, 255, 0);
+  transform: scale(1.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .eduContainer {
+    padding: 1rem; /* Adjust padding for tablets */
+  }
+
+  .EduBar {
+    gap: 15px; /* Reduce gap between images */
+  }
+
+  .EduImg {
+    max-width: 150px; /* Scale down images */
+  }
+
+  .eduPara {
+    padding: 1rem; /* Adjust padding for smaller screens */
+    font-size: 0.9rem; /* Scale text size */
+  }
+}
+
+@media (max-width: 480px) {
+  .eduContainer {
+    padding: 1rem; /* Adjust padding for mobile */
+  }
+
+  .EduBar {
+    gap: 10px; /* Reduce gap further */
+  }
+
+  .EduImg {
+    max-width: 120px; /* Further scale down images */
+  }
+
+  .eduPara {
+    padding: 0.75rem; /* Adjust padding for mobile */
+    font-size: 0.8rem; /* Scale down text size */
+  }
+}

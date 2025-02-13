@@ -1,0 +1,12 @@
+.eduContainer {
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+    con
+}
+
+.eduBox {
+    background-color: red;
+    color: white;
+    border: solid greenyellow;
+}

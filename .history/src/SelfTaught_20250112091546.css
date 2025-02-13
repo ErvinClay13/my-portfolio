@@ -1,0 +1,16 @@
+.selfBox {
+    background-color: red;
+    color: white;
+    border: solid greenyellow;
+}
+
+
+@media (max-width: 480px) {
+    .eduContainer {
+        display: flex;
+        margin-top: 40px;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+}

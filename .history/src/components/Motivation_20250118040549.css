@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.motivationContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  min-height: 100vh;
+  margin-top: 350px;
+  background-image: url("../assets/apeCodeBackground.png");
+  
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.motivationBox {
+  width: 100%;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.motivationBar {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.motivationImg {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: -10px 1px 1px rgb(200, 255, 0);
+}
+
+.motivationPara {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background-color: rgb(61, 60, 60);
+  border-radius: 20px;
+  border: solid 1px rgb(200, 255, 0);
+  color: white;
+  line-height: 1.6;
+  text-align: justify;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.motivationPara:hover {
+  box-shadow: 0 0 20px rgb(200, 255, 0);
+  transform: scale(1.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .motivationContainer {
+    padding: 1rem;
+  }
+
+  .motivationBar {
+    gap: 15px;
+  }
+
+  .motivationImg {
+    max-width: 150px;
+  }
+
+  .motivationPara {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .motivationContainer {
+    padding: 1rem;
+  }
+
+  .motivationBar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .motivationImg {
+    max-width: 120px;
+  }
+
+  .motivationPara {
+    padding: 0.75rem;
+    font-size: 0.8rem;
+  }
+}

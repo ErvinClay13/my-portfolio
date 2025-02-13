@@ -1,0 +1,13 @@
+
+
+.eduBox {
+    background-color: red;
+    color: white;
+    border: solid greenyellow;
+}
+
+
+@media (max-width: 480px) {
+    .aboutContainer {
+        gap: 20px;
+    }

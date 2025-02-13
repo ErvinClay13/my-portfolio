@@ -1,0 +1,53 @@
+/* .motivationBox {
+    background-color: red;
+    color: white;
+    border: solid greenyellow;
+} */
+
+    .motivationContainer {
+        display: flex;
+        margin-top: 40px;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+
+
+
+    .motivationBar {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+    }
+    
+    .selfImg {
+        width: 200px;
+        height: 100px;
+        border-radius: 20px;
+        box-shadow: -10px 1px 1px rgb(200, 255, 0);
+    }
+
+
+.motivationPara {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 500px; /* Limit max width for larger screens */
+    height: auto;
+    background-color: rgb(61, 60, 60);
+    border-radius: 20px;
+    border: solid 1px rgb(200, 255, 0);
+    padding: 1.5rem;
+    color: white;
+    line-height: 1.6;
+    text-shadow: rgb(200, 255, 0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: justify;
+  }
+  
+  .motivationPara:hover {
+    box-shadow: 0 0 20px rgb(200, 255, 0);
+    transform: scale(1.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
