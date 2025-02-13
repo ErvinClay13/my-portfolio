@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  
+  /* Self Taught Container */
+  .selfContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    padding: 2rem 1rem; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding in width calculations */
+    overflow-x: hidden; /* Prevent overflow caused by animation */
+    min-height: 100vh; /* Ensure it fills the viewport */
+    margin-top: 350px; /* Default for larger screens */
+  }
+  
+  /* Self Box */
+  .selfBox {
+    width: 100%;
+    max-width: 600px;
+    margin: 1rem auto; /* Center box horizontally */
+    padding: 1.5rem;
+    background-color: rgb(61, 60, 60);
+    border-radius: 20px;
+    border: solid 1px rgb(200, 255, 0);
+    color: white;
+    line-height: 1.6;
+    text-align: justify;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .selfBox:hover {
+    box-shadow: 0 0 20px rgb(200, 255, 0);
+    transform: scale(1.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Self Progress Bar Container */
+  .selfBar {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: center; /* Center items */
+    gap: 20px; /* Add spacing between images */
+    width: 100%; /* Prevent overflow */
+    padding: 0 1rem; /* Add padding for spacing */
+    box-sizing: border-box; /* Include gap/padding in width */
+  }
+  
+  /* Self Progress Images */
+  .selfImg {
+    width: 100%; /* Make images responsive */
+    max-width: 200px; /* Constrain images to a reasonable size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 20px;
+    box-shadow: -10px 1px 1px rgb(200, 255, 0);
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .selfContainer {
+      margin-top: 200px; /* Adjust spacing for tablets */
+    }
+  
+    .selfBar {
+      gap: 15px; /* Reduce gap between images */
+    }
+  
+    .selfImg {
+      max-width: 150px; /* Scale down images */
+    }
+  
+    .selfBox {
+      padding: 1rem; /* Adjust padding for smaller screens */
+      font-size: 0.9rem; /* Adjust text size */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .selfContainer {
+      margin-top: 100px; /* Adjust spacing for mobile */
+    }
+  
+    .selfBar {
+      flex-direction: column; /* Stack images vertically */
+      gap: 10px; /* Reduce gap further */
+    }
+  
+    .selfImg {
+      max-width: 120px; /* Further scale down images */
+    }
+  
+    .selfBox {
+      padding: 0.75rem;
+      font-size: 0.8rem;
+    }
+  }

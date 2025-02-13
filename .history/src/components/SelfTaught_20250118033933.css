@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    overflow-x: hidden; /* Prevent horizontal scrolling globally */
+  }
+  
+  /* Self-Taught Container */
+  .selfContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    padding: 2rem 1rem; /* Add padding */
+    box-sizing: border-box; /* Include padding in width calculations */
+    overflow-x: hidden; /* Prevent overflow */
+    min-height: 100vh; /* Ensure full viewport height */
+    margin-top: 350px; /* Top margin */
+  }
+  
+  /* Self-Taught Box */
+  .selfBox {
+    width: 100%;
+    max-width: 600px;
+    margin: 1rem auto;
+    padding: 1.5rem;
+    background-color: rgb(61, 60, 60);
+    border-radius: 20px;
+    border: solid 1px rgb(200, 255, 0);
+    color: white;
+    line-height: 1.6;
+    text-align: justify;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .selfBox:hover {
+    box-shadow: 0 0 20px rgb(200, 255, 0);
+    transform: scale(1.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Self-Taught Progress Bar Container */
+  .selfBar {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center; /* Center items */
+    gap: 20px; /* Add space between items */
+    width: 100%; /* Prevent overflow */
+    padding: 0 1rem; /* Add padding */
+    box-sizing: border-box; /* Include gap/padding in width */
+    flex-wrap: nowrap; /* Prevent wrapping, keep images side-by-side */
+    overflow-x: auto; /* Allow horizontal scrolling if necessary */
+    scrollbar-width: none; /* Hide scrollbar (Firefox) */
+    -ms-overflow-style: none; /* Hide scrollbar (IE/Edge) */
+  }
+  
+  .selfBar::-webkit-scrollbar {
+    display: none; /* Hide scrollbar (WebKit) */
+  }
+  
+  /* Self-Taught Images */
+  .selfImg {
+    flex-shrink: 0; /* Prevent shrinking */
+    width: 100%; 
+    max-width: 200px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: -10px 1px 1px rgb(200, 255, 0);
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .selfContainer {
+      margin-top: 200px; 
+  
+    .selfBar {
+      gap: 15px; 
+    }
+  
+    .selfImg {
+      max-width: 150px;
+    }
+  
+    .selfBox {
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .selfContainer {
+      margin-top: 100px; 
+    }
+  
+    .selfBar {
+      gap: 10px;
+    }
+  
+    .selfImg {
+      max-width: 120px;
+    }
+  
+    .selfBox {
+      padding: 0.75rem;
+      font-size: 0.8rem; 
+    }
+  }

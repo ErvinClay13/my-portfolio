@@ -1,0 +1,184 @@
+.workContainer {
+  height: auto;
+  box-shadow: 10px 5px 5px rgb(200, 255, 0);
+  background-color: rgba(0, 0, 0, 0.7);
+  border: solid ;
+}
+
+
+
+.swiper-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; 
+}
+
+.gitLink {
+  background-color: rgb(200, 255, 0);
+}
+
+h1 {
+  color: white;
+}
+
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 30rem; 
+  height: 40rem; 
+}
+
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+
+.workImg {
+  width: 30rem;
+  height: 40rem; 
+  object-fit: cover;
+  border-radius: 2rem;
+  transition: transform 0.3s ease;
+}
+
+
+.workImg:hover {
+  transform: scale(1.05);
+  filter: none;
+}
+
+
+.slideContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2; 
+}
+
+
+.swiper-slide:hover .slideContent {
+  background-color: rgba(0, 0, 0, 0.7); 
+  border-radius: 10px;
+  opacity: 1; /* Text appears on hover */
+  box-shadow: 10px 5px 5px rgb(200, 255, 0); 
+}
+
+
+.slideContent h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.slideContent p {
+  font-size: 1.6rem;
+}
+
+
+.slider-controler {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 3;
+  width: 30%; 
+}
+
+.slider-controler .slider-arrow {
+  background: var(--white);
+  width: 4rem;  
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+  transition: transform 0.2s ease, background 0.2s ease;
+  font-size: 1.8rem; 
+}
+
+.slider-controler .slider-arrow:hover {
+  transform: scale(1.1);
+}
+
+.slider-controler .swiper-button-prev {
+  position: absolute;
+  left: 15%;
+  background: none;
+  color: rgb(200, 255, 0);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+  transition: background 0.3s ease;
+}
+
+.slider-controler .swiper-button-next {
+  position: absolute;
+  right: 15%;
+  background: none;
+  color: rgb(200, 255, 0);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+  transition: background 0.3s ease;
+}
+
+
+.slider-controler .swiper-button-prev:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.slider-controler .swiper-button-next:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background: var(--primary);
+}
+
+.myWorkHeader {
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
