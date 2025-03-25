@@ -17,6 +17,7 @@ import VogueWebsite from "../MyWork/VogueWebsite-img.png";
 import TicTacToe from "../MyWork/TicTacToe-img.png";
 import RecipePage from "../MyWork/recipePage-img.png";
 import InteractiveRating from "../MyWork/interactive-rating.png";
+import AllieResumeBuilder from "../MyWork/AllieResumeScreenshot.png";
 
 function MyWork() {
   return (
@@ -78,6 +79,46 @@ function MyWork() {
               </div>
             </div>
           </SwiperSlide>
+
+
+
+
+          <SwiperSlide>
+            <div className="wrapper">
+              <img
+                className="workImg"
+                src={AllieResumeBuilder}
+                alt="Allie AI Resume Builder"
+              />
+              <div className="slideContent">
+                <h1>Pregnancy Tracker</h1>
+                <p>Tracks a woman's pregnancy after entering last menstrual.</p>
+                <button className="gitLink">
+                  <a
+                    href="https://ervinclay13.github.io/Pregnancy-Tracker/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    My Link
+                  </a>
+                </button>
+
+                <button className="gitLink">
+                  <a
+                    href="https://github.com/ErvinClay13/Pregnancy-Tracker"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Code
+                  </a>
+                </button>
+              </div>
+            </div>
+          </SwiperSlide>
+
+
+
+
           <SwiperSlide>
             <div className="wrapper">
               <img className="workImg" src={Library} alt="Library" />

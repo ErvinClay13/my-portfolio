@@ -91,11 +91,11 @@ function MyWork() {
                 alt="Allie AI Resume Builder"
               />
               <div className="slideContent">
-                <h1>AI Allie Resume Builder</h1>
+                <h1>Pregnancy Tracker</h1>
                 <p>AI Driven Resume Builder.</p>
                 <button className="gitLink">
-                  <a
-                    href="https://ervinclay13.github.io/Allie-AI-Resume/"
+                  <a  https://ervinclay13.github.io/Allie-Rusume-Builder-2.0/
+                    href="https://ervinclay13.github.io/Pregnancy-Tracker/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -105,7 +105,7 @@ function MyWork() {
 
                 <button className="gitLink">
                   <a
-                    href="https://github.com/ErvinClay13/Allie-AI-Resume/tree/main/allie-resume-ai"
+                    href="https://github.com/ErvinClay13/Pregnancy-Tracker"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

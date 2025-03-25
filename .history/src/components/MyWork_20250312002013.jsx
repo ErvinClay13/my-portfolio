@@ -17,7 +17,6 @@ import VogueWebsite from "../MyWork/VogueWebsite-img.png";
 import TicTacToe from "../MyWork/TicTacToe-img.png";
 import RecipePage from "../MyWork/recipePage-img.png";
 import InteractiveRating from "../MyWork/interactive-rating.png";
-import AllieResumeBuilder from "../MyWork/AllieResumeScreenshot.png";
 
 function MyWork() {
   return (
@@ -83,40 +82,9 @@ function MyWork() {
 
 
 
-          <SwiperSlide>
-            <div className="wrapper">
-              <img
-                className="workImg"
-                src={AllieResumeBuilder}
-                alt="Allie AI Resume Builder"
-              />
-              <div className="slideContent">
-                <h1>AI Allie Resume Builder</h1>
-                <p>AI Driven Resume Builder.</p>
-                <button className="gitLink">
-                  <a
-                    href="https://ervinclay13.github.io/Allie-AI-Resume/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    My Link
-                  </a>
-                </button>
-
-                <button className="gitLink">
-                  <a
-                    href="https://github.com/ErvinClay13/Allie-AI-Resume/tree/main/allie-resume-ai"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Code
-                  </a>
-                </button>
-              </div>
-            </div>
-          </SwiperSlide>
 
 
+          
 
 
           <SwiperSlide>

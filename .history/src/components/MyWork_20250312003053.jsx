@@ -17,11 +17,12 @@ import VogueWebsite from "../MyWork/VogueWebsite-img.png";
 import TicTacToe from "../MyWork/TicTacToe-img.png";
 import RecipePage from "../MyWork/recipePage-img.png";
 import InteractiveRating from "../MyWork/interactive-rating.png";
+import AllieResumeBuilder from "../MyWork/AllieResumeScreenshot.png";
 
 function MyWork() {
   return (
     <div className="workContainer">
-      <div className="">
+      <div className="workHead">
         <h1 className="myWorkHeader">My Work</h1>
       </div>
       <div id="work" className="carouselContainer">
@@ -78,6 +79,46 @@ function MyWork() {
               </div>
             </div>
           </SwiperSlide>
+
+
+
+
+          <SwiperSlide>
+            <div className="wrapper">
+              <img
+                className="workImg"
+                src={AllieResumeBuilder}
+                alt="Allie AI Resume Builder"
+              />
+              <div className="slideContent">
+                <h1>Alli</h1>
+                <p>AI Driven Resume Builder.</p>
+                <button className="gitLink">
+                  <a
+                    href="https://ervinclay13.github.io/Allie-Rusume-Builder-2.0/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    My Link
+                  </a>
+                </button>
+
+                <button className="gitLink">
+                  <a
+                    href="https://github.com/ErvinClay13/Allie-Rusume-Builder-2.0/tree/main"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Code
+                  </a>
+                </button>
+              </div>
+            </div>
+          </SwiperSlide>
+
+
+
+
           <SwiperSlide>
             <div className="wrapper">
               <img className="workImg" src={Library} alt="Library" />

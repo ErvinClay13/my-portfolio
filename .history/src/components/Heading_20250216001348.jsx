@@ -34,6 +34,9 @@ function Heading() {
           <a href="#skills" className="links">
             Skill
           </a>
+          {/* <a href="#Education" className="links">
+            Education
+          </a> */}
         </div>
       </div>
     </>

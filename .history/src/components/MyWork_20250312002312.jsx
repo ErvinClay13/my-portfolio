@@ -17,7 +17,7 @@ import VogueWebsite from "../MyWork/VogueWebsite-img.png";
 import TicTacToe from "../MyWork/TicTacToe-img.png";
 import RecipePage from "../MyWork/recipePage-img.png";
 import InteractiveRating from "../MyWork/interactive-rating.png";
-import AllieResumeBuilder from "../MyWork/AllieResumeScreenshot.png";
+import 
 
 function MyWork() {
   return (
@@ -87,15 +87,15 @@ function MyWork() {
             <div className="wrapper">
               <img
                 className="workImg"
-                src={AllieResumeBuilder}
-                alt="Allie AI Resume Builder"
+                src={PregnancyTracker}
+                alt="Pregnancy Tracker"
               />
               <div className="slideContent">
-                <h1>AI Allie Resume Builder</h1>
-                <p>AI Driven Resume Builder.</p>
+                <h1>Pregnancy Tracker</h1>
+                <p>Tracks a woman's pregnancy after entering last menstrual.</p>
                 <button className="gitLink">
                   <a
-                    href="https://ervinclay13.github.io/Allie-AI-Resume/"
+                    href="https://ervinclay13.github.io/Pregnancy-Tracker/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -105,7 +105,7 @@ function MyWork() {
 
                 <button className="gitLink">
                   <a
-                    href="https://github.com/ErvinClay13/Allie-AI-Resume/tree/main/allie-resume-ai"
+                    href="https://github.com/ErvinClay13/Pregnancy-Tracker"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

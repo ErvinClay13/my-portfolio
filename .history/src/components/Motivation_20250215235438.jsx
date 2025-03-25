@@ -30,11 +30,10 @@ function Motivation() {
       <h1>Motivation</h1>
       <div className="motivationBox">
         <p className="motivationPara">
-          I love the ability to turn an idea into a functional, visually
-          engaging product—whether it's a sleek portfolio, a business website,
-          or a dynamic web app. Web development empowers me to solve real
-          problems while expressing creativity through UI/UX design and modern
-          frameworks.
+        I love the ability to turn an idea into a functional, 
+        visually engaging product—whether it's a sleek portfolio, 
+        a business website, or a dynamic web app. Web development 
+        empowers me to solve real problems while expressing creativity through UI/UX design and modern frameworks.
         </p>
       </div>
       <div className="motivationBar">

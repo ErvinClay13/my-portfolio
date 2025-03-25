@@ -105,7 +105,7 @@ function MyWork() {
 
                 <button className="gitLink">
                   <a
-                    href="https://github.com/ErvinClay13/Allie-AI-Resume/tree/main/allie-resume-ai"
+                    href="https://github.com/ErvinClay13/Allie-Rusume-Builder-2.0/tree/main"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
