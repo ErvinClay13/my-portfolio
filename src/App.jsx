@@ -10,8 +10,7 @@ import SelfTaught from "./components/SelfTaught";
 import Motivation from "./components/Motivation";
 import ContactMe from "./components/ContactMe";
 import Footer from "./components/Footer";
-// import './index.css';
-// import RippleCursor from "./components/RippleCursor";
+
 
 
 function App() {
