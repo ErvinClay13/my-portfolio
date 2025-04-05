@@ -8,21 +8,6 @@
   padding: 0 20px; 
 } */
 
-
-.headingBody {
-  position: fixed;                /* Make it fixed */
-  top: 0;                         /* Stick to the top */
-  left: 0;
-  width: 100%;                    /* Full width */
-  background-color: var(--heading-color);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Softer shadow for fixed feel */
-  display: flex;
-  align-items: center;
-  justify-content: space-between; 
-  padding: 0 20px;
-  z-index: 1000;                  /* Stay above everything else */
-}
-
 .headingLinks {
   display: flex;
   align-items: center;

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Heading.css";
 import ApeCode from "../assets/ApeCode.png";
 
-// Functional component for the page heading/navigation
+
 function Heading() {
   // State to control whether the mobile menu is open or closed
   const [isMenuOpen, setIsMenuOpen] = useState(false);

@@ -20,9 +20,10 @@ body {
   overflow-x: hidden;
   min-height: 100vh;
   margin-top: 100px;
-  background-color: rgba(0, 0, 0, 0.7);
+  /* background-image: url("../assets/apeCodeBackground.png"); */
   background-size: cover;
-  background-position: center;  
+  background-position: center;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   box-shadow: 10px 5px 5px var(--primary-color);
 }

@@ -1,5 +1,10 @@
+
 import React, { useState } from "react";
+
+// Importing custom CSS for styling
 import "./Heading.css";
+
+// Importing logo asset
 import ApeCode from "../assets/ApeCode.png";
 
 // Functional component for the page heading/navigation

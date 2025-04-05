@@ -1,4 +1,7 @@
+// Importing React and required hooks
 import React, { useEffect } from "react";
+
+
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import "./Education.css";

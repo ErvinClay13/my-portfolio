@@ -1,6 +1,13 @@
+// Importing React and required hooks
 import React, { useEffect } from "react";
+
+// Importing Framer Motion for animation
 import { motion, useAnimation } from "framer-motion";
+
+// Importing hook to detect when component is in viewport
 import { useInView } from "react-intersection-observer";
+
+// Importing custom CSS for styling
 import "./Education.css";
 import educationBar75 from "../assets/educationBar75.png";
 import educationBar100 from "../assets/educationBar100.png";

@@ -19,6 +19,7 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
   min-height: 100vh;
+  
   background-image: url("../assets/apeCodeBackground.png");
   background-size: cover;
   background-position: center;

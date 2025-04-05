@@ -8,109 +8,123 @@ body {
   overflow-x: hidden;
 }
 
-.motivationContainer {
+
+.eduContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
-  width: 100%;
+  z-index: 0;
+  width: 100%; 
   max-width: 100%;
-  padding: 2rem 1rem;
-  box-sizing: border-box;
+  padding: 2rem 1rem; 
+  box-sizing: border-box; 
   overflow-x: hidden;
   min-height: 100vh;
-  margin-top: 100px;
-  background-color: rgba(0, 0, 0, 0.7);
+  /* background-image: url('../assets/apeCodeBackground.png'); */
   background-size: cover;
-  background-position: center;  
+  background-position: center;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   box-shadow: 10px 5px 5px var(--primary-color);
+  margin-bottom: 200px;
 }
 
-.motivationBox {
-  width: 100%;
-  max-width: 600px;
-  margin: 2rem auto;
-  padding: 1rem;
-  box-sizing: border-box;
+.eduBox {
+  width: 100%; 
+  max-width: 600px; 
+  margin: 2rem auto; 
+  padding: 1rem; 
+  box-sizing: border-box; 
 }
 
-.motivationBar {
+
+.EduBar {
   margin-top: 50px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
-  width: 100%;
+  gap: 20px; 
+  width: 100%; 
   padding: 0 1rem;
   box-sizing: border-box;
+  flex-wrap: nowrap;
+  overflow-x: auto; 
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
-.motivationImg {
-  width: 100%;
-  max-width: 200px;
-  height: auto;
+.EduBar::-webkit-scrollbar {
+  display: none;
+}
+
+
+.EduImg {
+  flex-shrink: 0; 
+  width: 100%; 
+  max-width: 200px; 
+  height: auto; 
   border-radius: 20px;
   box-shadow: -10px 1px 1px var(--primary-color);
 }
 
-.motivationPara {
+
+.eduPara {
   display: flex;
   align-items: center;
-  width: 100%;
-  max-width: 500px;
-  margin: 0 auto;
+  width: 100%; 
+  max-width: 500px; 
+  margin: 0 auto; 
   padding: 1.5rem;
   background-color: var(--background-section);
   border-radius: 20px;
   border: solid 1px var(--primary-color);
-  color: white;
+  color: var(--text-color);
   line-height: 1.6;
   text-align: justify;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.motivationPara:hover {
+.eduPara:hover {
   box-shadow: 0 0 20px var(--primary-color);
   transform: scale(1.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+
 @media (max-width: 768px) {
-  .motivationContainer {
-    padding: 1rem;
+  .eduContainer {
+    padding: 1rem; 
   }
 
-  .motivationBar {
-    gap: 15px;
+  .EduBar {
+    gap: 15px; 
   }
 
-  .motivationImg {
+  .EduImg {
     max-width: 150px;
   }
 
-  .motivationPara {
-    padding: 1rem;
-    font-size: 0.9rem;
+  .eduPara {
+    padding: 1rem; 
+    font-size: 0.9rem; 
   }
 }
 
 @media (max-width: 480px) {
-  .motivationContainer {
-    padding: 1rem;
+  .eduContainer {
+    padding: 1rem; 
   }
 
-  .motivationBar {
-    flex-direction: column;
+  .EduBar {
     gap: 10px;
   }
 
-  .motivationImg {
-    max-width: 120px;
+  .EduImg {
+    max-width: 120px; 
   }
 
-  .motivationPara {
-    padding: 0.75rem;
-    font-size: 0.8rem;
+  .eduPara {
+    padding: 0.75rem; 
+    font-size: 0.8rem; 
   }
 }
