@@ -1,0 +1,52 @@
+.gitContainer {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .apeCodeImg2 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+    border: solid 3px var(--primary-color);
+    box-shadow: 0 0 20px var(--primary-color);
+}
+
+.apeCodeImg2:hover {
+    /* box-shadow: 0 0 20px var(--primary-color); */
+    transform: scale(1.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+} */
+
+
+
+.getInTouchHeading {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: white;
+    text-shadow: 1px 1px 5px var(--primary-color);
+}
+.contactBox {
+    display: flex;
+}
+img {
+    width: 65px;
+    height: 65px;   
+}
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    height: 70px;
+    width: 70px;
+    overflow: hidden;
+}
+
+.item:hover {
+    box-shadow: 0 0 20px var(--primary-color);
+    transform: scale(1.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}

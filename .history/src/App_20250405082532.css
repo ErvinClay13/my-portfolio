@@ -1,0 +1,21 @@
+:root {
+  --primary-color: rgb(200, 255, 0);
+  --secondary-color: #2e2e2e;
+  --accent-color: #00ffee;
+  --text-color: #ffffff;
+}
+
+@keyframes ripple {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(4);
+      opacity: 0;
+    }
+  }
+  
+  .animate-ripple {
+    animation: ripple forwards;
+  }
