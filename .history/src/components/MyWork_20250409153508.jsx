@@ -207,8 +207,3 @@ function MyWork() {
     </Swiper>
   </div>
 </div>
-  );
-}
-
-// Exporting the component for use in the app
-export default MyWork;

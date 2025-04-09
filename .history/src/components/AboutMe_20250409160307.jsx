@@ -50,7 +50,7 @@ function AboutMe() {
             and more to bring ideas to life. I also have some experience working with 
             platforms like Firebase for backend services and tools to help 
             build and manage web and mobile applications, as well as Render for backend 
-            services and cloud hosting."
+            services and cloud hosting".
           </p>
         </div>
       </div>
